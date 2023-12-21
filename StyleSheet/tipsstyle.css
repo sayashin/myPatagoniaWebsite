@@ -2,22 +2,22 @@
 
 @font-face {
   font-family: montserratregular;
-  src: url(/fonts/montserrat.regular.ttf);
+  src: url(../fonts/montserrat.regular.ttf);
 }
 
 @font-face {
   font-family: montserratbold;
-  src: url(/fonts/montserrat.bold.ttf);
+  src: url(../fonts/montserrat.bold.ttf);
 }
 
 @font-face {
   font-family: TrajanProRegular;
-  src: url(/fonts/TrajanProRegular.ttf);
+  src: url(../fonts/TrajanProRegular.ttf);
 }
 
 @font-face {
   font-family: TrajanProBold;
-  src: url(/fonts/TrajanProBold.ttf);
+  src: url(../fonts/TrajanProBold.ttf);
 }
 
 /* body and texts-------------------------------------*/
