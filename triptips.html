@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+
+<head>
+  <title>Patagonia Adventures</title>
+  <meta charset="utf-8">
+  <meta name="description" content="this is a website about the patagonia attractions to visit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="patagonia, travel, adventure, argentina">
+  <link rel="stylesheet" type="text/css" href="StyleSheet/tipsstyle.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="lib/p5.min.js"></script>
+  <script src="./javascript/tipsnewsjavascript.js"></script>
+</head>
+
+<!-- This body section contains the structure for all the visble content -->
+
+<body>
+
+  <!-- This section contain all the header elements-->
+  <header>
+
+    <div class="header" id="myTopnav">
+      <div class="header-content">
+
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="Patagonia Adventures logo">
+        </a>
+        <a class="item" href="./report.html">Report</a>
+        <div class="menu">
+          <div class="dropbtn"><a href="./triptips.html">Trip Tips <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./triptips.html">Accommodations</a>
+            <a href="./triptips.html">Transportation</a>
+            <a href="./triptips.html">Seasons of the Year</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./news.html">News <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./news.html">News</a>
+            <a href="./news.html">Articles</a>
+            <a href="./news.html">Events Calendar</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./activities.html">Activities <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./activities.html">Adventure Tourism</a>
+            <a href="./activities.html">Sports</a>
+            <a href="./activities.html">Rides</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./attractions.html">Attractions <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./attractions.html">Tours</a>
+            <a href="./attractions.html">Most Visited Destinations</a>
+            <a href="./attractions.html">National Parks</a>
+          </div>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/menu.png"
+            alt="menu icon"></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="grid-container-index">
+
+      <div class="cal">
+        <div id="events">
+          <h3>Regional Events Calendar</h3>
+
+          <div id="eventsList">
+            
+            <p>January</p>
+            <ol>
+              <li>National Horse and Tradition Festival. Ingeniero Luiggi, La Pampa.</li>
+              <li>National Festival of Wheat and Bread. Eduardo Castex, La Pampa.</li>
+              <li>Regional Leather Roast Festival. Aluminé, Neuquén.</li>
+              <li>National Pear Festival. Allen, Rio Negro.</li>
+              <li>National Pear Festival. Allen, Rio Negro.</li>
+              <li>National Fine Fruit Festival. El Hoyo, Chubut.</li>
+              <li>National Cherry Festival. The Ancients, Santa Cruz.</li>
+            </ol>
+            <p>February</p>
+            <ol>
+              <li>National Livestock Festival of the Western Pampas. Victorica, La Pampa.</li>
+              <li>National Festival of the Blue Gulf. The Grottoes, Río Negro.</li>
+              <li>National Apple Festival. General Roca, Río Negro.</li>
+              <li>National Festival of the Poster. Junín de los Andes, Neuquén</li>
+              <li>National Garden Festival. Villa La Angostura, Neuquén</li>
+              <li>National Confluence Festival. Neuquén, Neuquén.</li>
+              <li>National Festival of Aguas Blancas. Aluminé, Neuquén.</li>
+              <li>Roast Festival. Cholila, Chubut.</li>
+              <li>National Steam Train Festival. El Maitén, Chubut.</li>
+              <li>National Festival of Lake Argentino. El Calafate, Santa Cruz.</li>
+              <li>National Festival “Cave of the Hands”. Perito Moreno, Santa Cruz.</li>
+            </ol>
+            <p>March</p>
+            <ol>
+              <li>National Salmon Festival. Shrimp, Chubut.</li>
+              <li>National Trekking Festival. El Chalten, Santa Cruz.</li>
+              <li>Valley Agricultural Show. Gaiman, Chubut.</li>
+              <li>National Sheepdog Festival, Río Grande, Tierra del Fuego.</li>
+            </ol>
+            <p>April</p>
+            <ol>
+              <li>Malvinas Vigil, Río Grande, Tierra del Fuego.</li>
+              <li>National Festival of Pehuén. Aluminé, Neuquén.</li>
+              <li>National Chocolate Festival. Bariloche, Río Negro.</li>
+              <li>Via Crucis Submarine. Puerto Madryn, Chubut.</li>
+            </ol>
+            <p>May</p>
+            <ol>
+              <li>National Gold and Silver Festival. Puerto San Julián, Santa Cruz.</li>
+            </ol>
+            <p>June</p>
+            <ol>
+              <li>National Holiday of the Longest Night. Ushuaia, Tierra del Fuego.</li>
+              <li>National Festival of Matra and Crafts. Valcheta, Río Negro.</li>
+            </ol>
+            <p>July</p> 
+            <ol>
+              <li>Madryn to the Plate. Puerto Madryn, Chubut.</li>
+              <li>Landing Festival. Gaiman, Chubut.</li>
+            </ol>
+            <p>August</p>
+            <ol>
+              <li>National Snow Festival. Bariloche, Río Negro.</li>
+              <li>National Snow Sculpture Festival. Ushuaia, Tierra del Fuego.</li>
+            </ol>
+            <p>September</p>
+            <ol>
+              <li>Provincial Student Festival and election of the Provincial Queen. Luis Beltrán and Allen, Río Negro.
+              </li>
+              <li>National Creole Grill Festival. Miguel Riglos, La Pampa.</li>
+            </ol>
+            <p>October</p>
+            <ol>
+              <li>National Festival of the Rider and the Horse. Luis Beltrán, Río Negro.</li>
+            </ol>
+            <p>November</p>
+            <ol>
+              <li>National Chivito Festival, dance and song. Chos Malal, Neuquén.</li>
+              <li>National Lamb Festival. Puerto Madryn, Chubut.</li>
+            </ol>
+            <p>December</p>
+            <ol>
+              <li>National Cordilleran Christmas Festival. San Martín de los Andes, Neuquén.</li>
+              <li>National Petroleum Festival. Comodoro Rivadavia, Chubut.</li>
+              <li>National Coal Festival. Turbio River, Santa Cruz.</li>
+              <li>Yellow Plume Festival, Puerto Deseado, Santa Cruz.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="content">
+
+        <div class="divider"></div>
+        <h1>Trip Tips</h1>
+        <div class="divider"></div>
+
+        <h2 class="right-caption">WHERE TO STAY</h2>
+        <div class="tipstitle">A Cabin in the Woods</div>
+        <img class="latestNews" src="images/cabin.jpg" alt="cabin image"> <!-- Source picture: [41]-------------------->
+        <div class="latestNews">
+          <p>With a typical architecture of the area, and framed in its landscapes, the cabins are one of the most
+            requested accommodations for those traveling to Patagonia, especially families or groups. <br>To guarantee a
+            good travel experience, we always recommend hiring accommodation and tourist services that have the
+            corresponding authorization.<br>The available options for accommodation are: Hotels, Cabins, Apart Hotels,
+            Hostels, Apartments, Private Houses, Dormis and Campings.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+
+        <h1 class="left-caption">SEASONS</h1>
+        <div class="tipstitle" style="text-align: right">Different Seasons in Patagonia</div>
+        <img class="latestNews" src="images/guia-para-la-patagonia-argentina.jpg" alt="seasons of patagonia image">
+        <!-- Source picture: [39]-------------------->
+        <div class="latestNews">
+          <p>To travel to Patagonia you have to take into account the time of year before making a decision: the
+            important thing is to know what the spring-summer or autumn-winter seasons offer us. Each era has its
+            particular panoramas and charms. Below we provide you with a brief guide to what Patagonia offers depending
+            on the time of year you travel.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+        <h2 class="right-caption">TRANSPORTATION</h2>
+        <div class="tipstitle">How to Get Around Patagonia</div>
+        <img class="latestNews" src="images/carretera-austral-chile.jpg" alt="patagonia road image"> <!-- Source picture: [40]-------------------->
+        <div class="latestNews">
+          <p>Renting a car for a road trip in Patagonia is known for its high cost. While there are a few small airports
+            in the region, flights tend to be infrequent and pricey. However, the positive aspect is that bus travel in
+            Patagonia is typically quite comfortable, the buses were all roomy and provided a comfortable experience.
+          </p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+        <h1 class="left-caption">TIME MANAGING</h1>
+        <div class="tipstitle" style="text-align: right">How to Take Advantage of 72 Hours in Bariloche</div>
+        <img class="latestNews" src="images/bariloche2.jpg" alt="bariloche town image">
+        <div class="latestNews"> <!-- Source picture: [38]-------------------->
+          <p>Certainly, if you have just a limited number of days to explore Bariloche, there are certain must-visit
+            places. To ensure you don't miss out on these attractions, we've crafted a three-day itinerary for your
+            Bariloche journey, providing a day-by-day breakdown. Let's embark on this adventure!</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+      </div>
+
+
+      <div id="advertising">
+
+        <a href="https://apartdellago.com.ar/"><img class="adsimage" src="images/hotel.jpg" alt="hotel advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="https://www.escuelaxtreme.com"><img class="adsimage" src="images/147.jpg" alt="school of ski advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="https://www.amapatagoniarentacar.com.ar"><img class="adsimage" src="images/rentacar.jpg" alt="car rental advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="underConstruction.html"><img class="adsimage" src="images/adwus.jpg" alt="PA advertising"></a>
+
+      </div>
+
+
+      <footer>
+
+        <div class="footer-logo-divider">
+          <a href="index.html">
+            <img class="footer-logo" src="images/logoB.png" alt="Logo of the website">
+          </a>
+        </div>
+
+        <section class="footersocialm">
+          <div class="footer-header">&#8212;Links&#8212;</div>
+          <div><a href="underConstruction.html">About Us</a></div>
+          <div><a href="underConstruction.html">To Post an Ad</a></div>
+          <div><a href="underConstruction.html">Suggestions</a></div>
+          <div><a href="underConstruction.html">FAQ</a></div>
+        </section>
+
+        <section class="footerlinks">
+          <div class="footer-header">&#8212;Follow Us&#8212;</div>
+          <br>
+          <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram logo"></a>
+          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+          <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter logo"></a>
+          <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="Tiktok logo"></a>
+        </section>
+
+        <section class="footersocialm">
+          <div class="footer-header">&#8212;Contacts&#8212;</div>
+          <p>fs209@student.london.ac.uk</p>
+          <h4 class="footer-subheader">Subscribe to our newsletter</h4>
+          <form aria-label="email input form">
+            <input type="text" placeholder="Email">
+            <input type="submit">
+          </form>
+        </section>
+
+      </footer>
+
+    </div>
+
+  </div>
+
+</body>

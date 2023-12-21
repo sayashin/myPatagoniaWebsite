@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+
+<head>
+  <title>Patagonia Adventures</title>
+  <meta charset="utf-8">
+  <meta name="description" content="this is a website about the patagonia attractions to visit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="patagonia, travel, adventure, argentina">
+  <link rel="stylesheet" type="text/css" href="StyleSheet/activitiesstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="lib/p5.min.js"></script>
+</head>
+
+<!-- This body section contains the structure for all the visble content -->
+
+<body>
+
+  <!-- This section contain all the header elements-->
+  <header>
+
+    <div class="header" id="myTopnav">
+      <div class="header-content">
+
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="Patagonia Adventures logo">
+        </a>
+        <a class="item" href="./report.html">Report</a>
+        <div class="menu">
+          <div class="dropbtn"><a href="./triptips.html">Trip Tips <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./triptips.html">Accommodations</a>
+            <a href="./triptips.html">Transportation</a>
+            <a href="./triptips.html">Seasons of the Year</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./news.html">News <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./news.html">News</a>
+            <a href="./news.html">Articles</a>
+            <a href="./news.html">Events Calendar</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./activities.html">Activities <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./activities.html">Adventure Tourism</a>
+            <a href="./activities.html">Sports</a>
+            <a href="./activities.html">Rides</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./attractions.html">Attractions <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./attractions.html">Tours</a>
+            <a href="./attractions.html">Most Visited Destinations</a>
+            <a href="./attractions.html">National Parks</a>
+          </div>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/menu.png"
+            alt="menu icon"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- This section contains the content of the page-->
+  <div class="content">
+    <div class="grid-container-index">
+
+      <div id="content">
+
+        <div class="divider"></div>
+        <h1>Adventure Tourism</h1>
+        <div class="divider"></div>
+
+        <div class="container">
+
+          <!-- Reference: this slideshows are an Adaptation of [3]------------>
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/baker-patagonia-aventura.jpg" style="width:100%" alt="rafting picture">
+            <!-- Source picture: [7]-------------------->
+            <div class="caption-container">
+              <p id="caption"><a href="underConstruction.html">Rafting and Tubing</a></p>
+              <p class="description">Explore the thrill of rafting in Patagonia's premier whitewater rivers with six
+                remarkable rafting expeditions available in 2023. Craft your personalized itinerary, allowing you to
+                explore renowned destinations like Balmaceda, Puerto Rio Tranquilo, Mirador Glaciar Exploradores,
+                Patagonia, Baker River, and Punta Arenas.</p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/climbing.jpg" style="width:100%" alt="mountaineering picture"> <!-- Source picture: [16]-------------------->
+            <div class="caption-container">
+              <p><a href="underConstruction.html">Mountaineering in Patagonia</a></p>
+              <p class="description">Patagonia is renowned for featuring some of South America's most thrilling terrains
+                for mountaineering, with its rugged Andean peaks and the isolated stretches of the Patagonian Ice Cap
+                having drawn aspiring mountaineers for more than a century.</p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/diving.jpg" style="width:100%" alt="diving picture"> <!-- Source picture: [17]-------------------->
+            <div class="caption-container">
+              <p><a href="underConstruction.html">Scuba and Snorkeling in Patagonia</a></p>
+              <p class="description">Patagonia offers opportunities for scuba diving in the Atlantic waters, including
+                the Beagle Channel, often referred to as the 'End of the World,' as well as the serene depths of Nahuel
+                Huapi in the Andean lake region.</p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/horseriding.jpg" style="width:100%" alt="horseriding picture"> <!-- Source picture: [18]-------------------->
+            <div class="caption-container">
+              <p><a href="underConstruction.html">Horseback Riding</a></p>
+              <p class="description">Patagonia offers a range of horseback riding experiences suitable for visitors of
+                every skill level who seek the thrill of riding across the Andes or through the expansive steppes.
+                Torres del Paine, Bariloche, the Lake District, El Calafate, El Chalten, and Aysen stand out as prime
+                regions for horseback riding in Patagonia. You can opt for either day rides or extended horseback
+                adventures, which can span from three to fourteen days in duration.</p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/parapente.jpg" style="width:100%" alt="paragliding image"> <!-- Source picture: [19]-------------------->
+            <div class="caption-container">
+              <p><a href="underConstruction.html">Parasailing and Paragliding</a></p>
+              <p class="description">Cross-country aviators have soared beyond altitudes of 4,000 meters, traversing a
+                rugged and untamed terrain comprising glaciers, mountains, lakes, and turbulent whitewater rivers.
+                Embarking on a cross-country flight from this region also brings the possibility of encountering
+                wildlife, as it serves as the native habitat of the Andean condor. While a chance encounter with one of
+                these majestic birds isn't assured, you're certainly in the ideal location for such an experience.</p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/kayaking.jpg" style="width:100%" alt="kayaking image"> <!-- Source picture: [20]-------------------->
+            <div class="caption-container">
+              <p><a href="underConstruction.html">Kayaking and Canoeing</a></p>
+              <p class="description">Connected by immense glaciers and pristine lakes, the unspoiled and wild expanse of
+                Patagonia offers a haven for nature enthusiasts. Additionally, in the realm of aquatic pursuits,
+                Patagonia stands out as a premier destination. Whether you find yourself in Bariloche or the Beagle
+                Channel, water sports aficionados can navigate exhilarating rapids, serene lakes, and glide by imposing
+                glaciers.</p>
+            </div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="images/baker-patagonia-aventura.jpg" style="width:100%"
+                onclick="currentSlide(1)" alt="Rafting and Tubing">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/climbing.jpg" style="width:100%" onclick="currentSlide(2)"
+                alt="Mountaineering in Patagonia">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/diving.jpg" style="width:100%" onclick="currentSlide(3)"
+                alt="Scuba and Snorkeling in Patagonia">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/horseriding.jpg" style="width:100%" onclick="currentSlide(4)"
+                alt="Horseback Riding">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/parapente.jpg" style="width:100%" onclick="currentSlide(5)"
+                alt="Parasailing and Paragliding">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/kayaking.jpg" style="width:100%" onclick="currentSlide(6)"
+                alt="Kayaking and Canoeing">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="divider"></div>
+        <h1>Sports</h1>
+        <div class="divider"></div>
+
+        <div class="container">
+
+          <!-- Reference: this slideshows are an Adaptation of [3]------------>
+          <!-- Full-width images with number text -->
+          <div class="mySlides2">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/fishing.jpg" style="width:100%" alt="fishing image">
+            <div class="caption-container"> <!-- Source picture: [21]-------------------->
+              <p id="caption2"><a href="underConstruction.html">Fly Fhishing in Patagonia</a></p>
+              <p class="description">Patagonia provides fly fishermen with access to world-class angling opportunities
+                amidst a stunning array of landscapes. The waters span from serene lakes and gentle streams to wild
+                whitewater rivers. While Patagonia is renowned for its Brown Trout population, anglers can also pursue
+                Salmon, Carp, and the indigenous Perca. Typically, the fishing season extends from mid-November to
+                mid-April.</p>
+            </div>
+          </div>
+
+          <div class="mySlides2">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/skiing.jpg" style="width:100%" alt="skiing image"> <!-- Source picture: [22]-------------------->
+            <div class="caption-container">
+              <p><a href="underConstruction.html">Skiing and Snowboarding</a></p>
+              <p class="description">Some ski resorts will surprise you with their views from the heights of the slopes
+                and the quality of the snow. Some high-level European teams come to train in these latitudes during the
+                southern winter.</p>
+            </div>
+          </div>
+
+          <div class="mySlides2">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/biking.jpg" style="width:100%" alt="mmountain biking image"> <!-- Source picture: [23]-------------------->
+            <div class="caption-container">
+              <p><a href="underConstruction.html">Mountain Biking</a></p>
+              <p class="description">Explore the ever-changing scenery of Patagonia at a pace that allows you to fully
+                immerse yourself in its beauty. Traverse gravel roads, race along singletrack trails, and quietly
+                approach the region's wildlife, all while being surrounded by the majestic presence of peaks, glaciers,
+                and volcanoes.</p>
+            </div>
+          </div>
+
+          <div class="mySlides2">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/paintball.jpg" style="width:100%" alt="playing paintball image"> <!-- Source picture: [27]-------------------->
+            <div class="caption-container">
+              <p><a href="underConstruction.html">Paintball in Ushuaia</a></p>
+              <p class="description">Paintball is a strategic game gaining growing recognition as a sport, and Ushuaia's
+                breathtaking landscape provides an ideal backdrop for engaging in this activity.</p>
+            </div>
+          </div>
+
+          <div class="mySlides2">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/patinar-sobre-el-hielo.jpg" style="width:100%" alt="ice skating image">
+            <div class="caption-container"> <!-- Source picture: [26]-------------------->
+              <p><a href="underConstruction.html">Ice Skating and Hockey</a></p>
+              <p class="description">El Calafate hosts the Ice Festival for three consecutive weekends in July and
+                August. This unique event takes place in the Redonda Bay, which boasts the largest natural ice skating
+                area in South America, spanning approximately 4 kilometers in length, 3 kilometers in width, and with
+                depths ranging from 2 to 40 meters in its shallowest areas.</p>
+            </div>
+          </div>
+
+          <div class="mySlides2">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/9-Golf-Llao-Llao-1.jpg" style="width:100%" alt="golfing image"> <!-- Source picture: [25]-------------------->
+            <div class="caption-container">
+              <p><a href="underConstruction.html">Golf in Patagonia</a></p>
+              <p class="description">Among the various activities that can be carried out on Patagonian soil, the
+                practice of golf is one of the most strongly developed in recent times. Patagonia presents great
+                diversity, made up of magnificent settings for the development of this sport. The enjoyment of physical
+                exercise is combined with the delight of nature in all its abundance and variety.</p>
+            </div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+          <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column2">
+              <img class="demo cursor" src="images/fishing.jpg" style="width:100%" onclick="currentSlide2(1)"
+                alt="Fly Fhishing in Patagonia">
+            </div>
+            <div class="column2">
+              <img class="demo cursor" src="images/skiing.jpg" style="width:100%" onclick="currentSlide2(2)"
+                alt="Skiing and Snowboarding">
+            </div>
+            <div class="column2">
+              <img class="demo cursor" src="images/biking.jpg" style="width:100%" onclick="currentSlide2(3)"
+                alt="Mountain Biking">
+            </div>
+            <div class="column2">
+              <img class="demo cursor" src="images/paintball.jpg" style="width:100%" onclick="currentSlide2(4)"
+                alt="Paintball in Ushuaia">
+            </div>
+            <div class="column2">
+              <img class="demo cursor" src="images/patinar-sobre-el-hielo.jpg" style="width:100%"
+                onclick="currentSlide2(5)" alt="Ice Skating and Hockey">
+            </div>
+            <div class="column2">
+              <img class="demo cursor" src="images/9-Golf-Llao-Llao-1.jpg" style="width:100%" onclick="currentSlide2(6)"
+                alt="Golf in Patagonia">
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="divider"></div>
+        <h1>Other Activities</h1>
+        <div class="divider"></div>
+
+        <div class="articlescontainer">
+          <img class="soimage" src="images/cruceros-glaciares-patagonia.jpg" alt="Family Rides Illustration">
+          <!-- Source picture: [28]-------------------->
+          <h4>OUTSTANDING EXCURSIONS</h4>
+          <h3>Patagonia Cruises</h3>
+          <p>Opting for adventure cruise ships is the ultimate means to explore the unspoiled and otherwise inaccessible
+            regions of Patagonia.</p>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <div class="articlescontainer">
+          <img class="soimage" src="images/hiking.jpg" alt="Tickets link illustration">
+          <!-- Source picture: [29]-------------------->
+          <h4>INEVITABLE</h4>
+          <h3 class="sotext">Hiking and Trekking</h3>
+          <p class="sotext">Patagonia's exceptional hiking trails consistently rank it as a top destination for
+            trekkers. Let the stunning scenery captivate your senses and leave you awestruck.</p>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <div class="articlescontainer">
+          <img class="soimage" src="images/whales.jpg" alt="Eating illustration">
+          <!-- Source picture: [30]-------------------->
+          <h4>A CLASSIC</h4>
+          <h3>Whale Watching</h3>
+          <p>Embark on a dedicated whale-watching cruise or boat excursion, which offers the opportunity to observe
+            orcas, humpbacks, southern rights, and the rarely seen blue whale.</p>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+      </div>
+
+
+      <div id="advertising">
+
+        <a href="https://apartdellago.com.ar/"><img class="adsimage" src="images/hotel.jpg" alt="hotel advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="https://www.escuelaxtreme.com"><img class="adsimage" src="images/147.jpg" alt="ski school advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="https://www.amapatagoniarentacar.com.ar"><img class="adsimage" src="images/rentacar.jpg" alt="car rental advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="underConstruction.html"><img class="adsimage" src="images/adwus.jpg" alt="PA advertising"></a>
+
+      </div>
+
+      <!-- This section contain all the footer elements-->
+      <footer>
+
+        <div class="footer-logo-divider">
+          <a href="index.html">
+            <img class="footer-logo" src="images/logoB.png" alt="Logo of the website">
+          </a>
+        </div>
+
+        <section class="footersocialm">
+          <div class="footer-header">&#8212;Links&#8212;</div>
+          <div><a href="underConstruction.html">About Us</a></div>
+          <div><a href="underConstruction.html">To Post an Ad</a></div>
+          <div><a href="underConstruction.html">Suggestions</a></div>
+          <div><a href="underConstruction.html">FAQ</a></div>
+        </section>
+
+        <section class="footerlinks">
+          <div class="footer-header">&#8212;Follow Us&#8212;</div>
+          <br>
+          <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram logo"></a>
+          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+          <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter logo"></a>
+          <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="Tiktok logo"></a>
+        </section>
+
+        <section class="footersocialm">
+          <div class="footer-header">&#8212;Contacts&#8212;</div>
+          <p>fs209@student.london.ac.uk</p>
+          <h4 class="footer-subheader">Subscribe to our newsletter</h4>
+          <form aria-label="email input form">
+            <input type="text" placeholder="Email">
+            <input type="submit">
+          </form>
+        </section>
+
+      </footer>
+
+    </div>
+
+  </div>
+  <!-- This section call the javascript file-->
+  <script src="javascript/activitiesjavascript.js"></script>
+</body>

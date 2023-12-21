@@ -1,0 +1,1625 @@
+/*fonts-------------------------------------*/
+
+@font-face {
+  font-family: montserratregular;
+  src: url(/fonts/montserrat.regular.ttf);
+}
+
+@font-face {
+  font-family: montserratbold;
+  src: url(/fonts/montserrat.bold.ttf);
+}
+
+@font-face {
+  font-family: TrajanProRegular;
+  src: url(/fonts/TrajanProRegular.ttf);
+}
+
+@font-face {
+  font-family: TrajanProBold;
+  src: url(/fonts/TrajanProBold.ttf);
+}
+
+/* common css-------------------------------------*/
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* body and texts-------------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+
+  h1 {
+    text-align: center;
+    font-family: "TrajanProRegular";
+    font-size: 18px;
+    margin: 0px;
+    font-weight: 100;
+    text-shadow: 0px 0px 6px white;
+  }
+
+  h3 {
+    font-family: TrajanProRegular;
+    font-size: 20px;
+  }
+
+  h4 {
+    font-family: "montserratbold";
+    font-size: 14px;
+  }
+
+  p {
+    font-family: "montserratregular";
+    font-size: 14px;
+  }
+}
+
+/* body and texts-------------------------------------*/
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1010px) {
+
+  h1 {
+    text-align: center;
+    font-family: "TrajanProRegular";
+    font-size: 33px;
+    margin: 0px;
+    font-weight: 100;
+    text-shadow: 0px 0px 6px white;
+  }
+
+  h3 {
+    font-family: TrajanProRegular;
+    font-size: 20px;
+  }
+
+  h4 {
+    font-family: montserratbold;
+    font-size: 14px;
+  }
+
+  p {
+    font-family: montserratregular;
+    font-size: 14px;
+  }
+}
+
+/* body and texts-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  h1 {
+    text-align: center;
+    font-family: "TrajanProRegular";
+    font-size: 43px;
+    margin: 0px;
+    font-weight: 100;
+    text-shadow: 0px 0px 6px white;
+  }
+
+  h3 {
+    font-family: TrajanProRegular;
+    font-size: 26px;
+  }
+
+  h4 {
+    font-family: montserratbold;
+    font-size: 16px;
+  }
+
+  p {
+    font-family: montserratregular;
+    font-size: 16px;
+  }
+}
+
+/*header/navigation-------------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  /* Style the header with a grey background and some padding */
+  .header {
+    overflow: hidden;
+    background-color: rgb(120, 145, 155);
+  }
+
+  .header:hover {
+    background-color: rgba(120, 145, 155, 0.7);
+  }
+
+  .logo img {
+    float: left;
+    padding: 20px 0px 0px;
+    width: 35%;
+  }
+
+  /* Style the links inside the navigation bar */
+  .item {
+    float: right;
+    overflow: hidden;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    text-align: center;
+    padding: 22px 6px 5px 6px;
+    background-color: inherit;
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: "TrajanProBold";
+  }
+
+  /* menu container - needed to position the menu content */
+  .menu {
+    float: right;
+    overflow: hidden;
+  }
+
+  /* Style the menu button to fit inside the topnav */
+  .menu .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    padding: 22px 6px 5px 6px;
+    background-color: inherit;
+    font-family: "TrajanProBold";
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .menu .dropbtn a {
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* Style the menu content (hidden by default) */
+  .menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Style the links inside the menu */
+  .menu-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "TrajanProBold";
+    font-size: 13px;
+  }
+
+  .slidecaptions {
+    font-family: 'montserratregular';
+    font-weight: 100;
+    font-size: 0.5em;
+    position: absolute;
+    top: 4.5%;
+    left: 5px;
+    text-shadow: 0px 0px 6px black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    max-width: 80%;
+  }
+}
+
+/*header/navigation-------------------------------------*/
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1010px) {
+
+  /* Style the header with a grey background and some padding */
+  .header {
+    overflow: hidden;
+    background-color: rgb(120, 145, 155);
+  }
+
+  .header:hover {
+    background-color: rgba(120, 145, 155, 0.7);
+  }
+
+  .header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .logo img {
+    float: left;
+    padding: 18px 0px 0px;
+    width: 35%;
+  }
+
+  /* Style the links inside the navigation bar */
+  .item {
+    float: right;
+    overflow: hidden;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    text-align: center;
+    padding: 22px 6px 5px 6px;
+    background-color: inherit;
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: "TrajanProBold";
+  }
+
+  .header .icon {
+    display: none;
+  }
+
+  /* menu container - needed to position the menu content */
+  .menu {
+    float: right;
+    overflow: hidden;
+  }
+
+  /* Style the menu button to fit inside the topnav */
+  .menu .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    padding: 22px 6px 5px 6px;
+    background-color: inherit;
+    font-family: "TrajanProBold";
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .menu .dropbtn a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Style the menu content (hidden by default) */
+  .menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Style the links inside the menu */
+  .menu-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "TrajanProBold";
+    font-size: 13px;
+  }
+
+  .slidecaptions {
+    font-family: 'montserratregular';
+    font-weight: 100;
+    font-size: 0.6em;
+    position: absolute;
+    top: 5.5%;
+    left: 10px;
+    text-shadow: 0px 0px 6px black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    max-width: 80%;
+  }
+}
+
+/*header/navigation-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  /* Style the header with a grey background and some padding */
+  .header {
+    overflow: hidden;
+    background-color: rgb(120, 145, 155);
+    /*  margin-bottom: 54%;*/
+  }
+
+  .header:hover {
+    background-color: rgba(120, 145, 155, 0.7);
+  }
+
+  .header-content {
+    max-width: 1206px;
+    margin: 0 auto;
+    float: none;
+    /*    padding-bottom: 56.25%;*/
+    /* 16:9 aspect ratio */
+  }
+
+  .logo {
+    float: left;
+    padding: 18px 0px 2px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .item {
+    float: right;
+    overflow: hidden;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+    text-align: center;
+    padding: 26px 10px 14px 10px;
+    background-color: inherit;
+    margin: 0;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 35px;
+    font-family: "TrajanProBold";
+  }
+
+  .header .icon {
+    display: none;
+  }
+
+  /* menu container - needed to position the menu content */
+  .menu {
+    float: right;
+    overflow: hidden;
+  }
+
+  /* Style the menu button to fit inside the topnav */
+  .menu .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+    padding: 26px 10px 14px 10px;
+    background-color: inherit;
+    font-family: "TrajanProBold";
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .menu .dropbtn a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Style the menu content (hidden by default) */
+  .menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Style the links inside the menu */
+  .menu-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "TrajanProBold";
+    font-size: 14px;
+    z-index: 1000;
+  }
+
+  .slidecaptions {
+    font-family: 'montserratregular';
+    font-weight: 100;
+    font-size: 0.6em;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    text-shadow: 0px 0px 6px black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    max-width: 80%;
+  }
+}
+
+/* Add a background on topnav links and the menu button on hover */
+.header .item:hover,
+.menu:hover .dropbtn {
+  background-color: rgba(255, 221, 60, 0.4);
+  color: white;
+}
+
+/* Add a background to menu links on hover */
+.menu-content a:hover {
+  background-color: rgba(255, 221, 60, 0.25);
+  color: black;
+}
+
+/* Show the menu menu when the user moves the mouse over the menu button */
+.menu:hover .menu-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one. -------------------------------------*/
+@media screen and (max-width: 720px) {
+
+  .header a:not(:first-child),
+  .menu .dropbtn {
+    display: none;
+  }
+
+  .logo img {
+    float: left;
+    padding: 5px 80px 5px 10px;
+    width: 80%;
+  }
+
+  .header a.icon {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. Display the links vertically instead of horizontally) */
+@media screen and (max-width: 720px) {
+  .header.responsive {
+    position: relative;
+    margin-bottom: 15%;
+  }
+
+  .header.responsive a.icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 5px 16px;
+  }
+
+  .header.responsive .menu {
+    float: none;
+  }
+
+  .header.responsive .menu-content {
+    position: relative;
+  }
+
+  .header.responsive .menu-content a {
+    padding: 5px 16px;
+  }
+
+  .header.responsive .menu .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px 16px;
+  }
+
+  .header.responsive .logo img {
+    margin-right: 400px;
+  }
+}
+
+/*main body-------------------------------------*/
+/*divider to add visual separation*/
+.divider {
+  background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+  height: 1.5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/*main body-------------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  .content {
+    text-align: center;
+    position: relative;
+  }
+
+  /*grid of the attractions-------------------------------------*/
+
+  #content {
+    grid-area: main;
+  }
+
+  #advertising {
+    grid-area: ads;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-areas:
+      'header header header header header header'
+      'nav nav nav nav nav nav'
+      'main main main main main main'
+      'ads ads ads ads ads ads'
+      'footer footer footer footer footer footer';
+    background-color: white;
+  }
+
+  #advertising {
+    background: white;
+  }
+
+  #advertising::before {
+    display: none;
+  }
+
+}
+
+/*main body-------------------------------------*/
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1010px) {
+
+  .content {
+    text-align: center;
+  }
+
+  /*grid of the attractions-------------------------------------*/
+
+  #content {
+    grid-area: main;
+  }
+
+  #advertising {
+    grid-area: ads;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-areas:
+      'header header header header header header'
+      'nav nav nav nav nav nav'
+      'main main main main main main'
+      'ads ads ads ads ads ads'
+      'footer footer footer footer footer footer';
+    background-color: white;
+  }
+
+  #advertising {
+    background: white;
+  }
+
+  #advertising::before {
+    display: none;
+  }
+}
+
+/*main body-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  .content {
+    max-width: 1206px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  /*grid of the attractions-------------------------------------*/
+  #nav {
+    grid-area: nav;
+  }
+
+  #content {
+    grid-area: main;
+  }
+
+  #advertising {
+    grid-area: ads;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto 250px;
+    grid-template-areas:
+      'header header header header header header'
+      'nav nav nav nav nav nav'
+      'main main main main main ads'
+      'footer footer footer footer footer footer';
+    background-color: white;
+  }
+
+  #advertising {
+    background: white;
+    position: relative;
+  }
+}
+
+#advertising::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 1.5px;
+  height: 100%;
+  background-color: rgb(120, 145, 155);
+  margin-left: 10px;
+}
+
+/*main news/articles-------------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  /*captions-------------------------------------*/
+  .right-caption {
+    font-family: montserratregular;
+    font-size: 0.8em;
+    margin: 0px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    text-align: right;
+  }
+
+  .left-caption {
+    font-family: montserratregular;
+    font-size: 0.8em;
+    margin: 0px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    text-align: left;
+  }
+
+  .right-caption:before {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    padding-right: 50%;
+    margin-top: 40px;
+  }
+
+  .left-caption:after {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    margin-left: 10px;
+    padding-left: 40%;
+    margin-top: 60px;
+  }
+
+  /*news/articles container-------------------------------------*/
+
+  .latestNews {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    padding: 0px 0px 5px 0px;
+    width: 90%;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: top;
+  }
+
+  .latestnews img {
+    width: 100%;
+    height: auto;
+  }
+
+  .latestNews h1 {
+    text-align: left;
+    color: rgb(120, 145, 155);
+    font-size: 1.8em;
+  }
+
+  .latestNews p {
+    line-height: 160%;
+    padding-bottom: 15px;
+  }
+}
+
+/*main news/articles-------------------------------------*/
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1010px) {
+
+  /*captions-------------------------------------*/
+  .right-caption {
+    font-family: montserratregular;
+    font-size: 1em;
+    margin: 0px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    text-align: right;
+  }
+
+  .left-caption {
+    font-family: montserratregular;
+    font-size: 1em;
+    margin: 0px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    text-align: left;
+  }
+
+  .right-caption:before {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    padding-right: 60%;
+    margin-top: 40px;
+  }
+
+  .left-caption:after {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    margin-left: 10px;
+    padding-left: 42%;
+    margin-top: 40px;
+  }
+
+  /*news/articles container-------------------------------------*/
+
+  .latestNews {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    padding: 0px 0px 5px 0px;
+    width: 44%;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: top;
+  }
+
+  .latestnews img {
+    width: 100%;
+    height: auto;
+  }
+
+  .latestNews h1 {
+    text-align: left;
+    color: rgb(120, 145, 155);
+  }
+
+  .latestNews p {
+    line-height: 160%;
+    padding-bottom: 15px;
+  }
+}
+
+/*main news/articles-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  /*captions-------------------------------------*/
+  .right-caption {
+    font-family: montserratregular;
+    font-size: 1.3em;
+    margin: 0px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    text-align: right;
+  }
+
+  .left-caption {
+    font-family: montserratregular;
+    font-size: 1.3em;
+    margin: 0px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  .right-caption:before {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    padding-right: 70%;
+    margin-top: 40px;
+  }
+
+  .left-caption:after {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    margin-left: 10px;
+    padding-left: 46%;
+    margin-top: 45px;
+  }
+
+  /*news/articles container-------------------------------------*/
+
+  .latestNews {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    padding: 0px 0px 5px 0px;
+    width: 48%;
+    text-align: left;
+    /*  margin-left: 5px;*/
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .latestnews img {
+    width: 100%;
+    height: auto;
+  }
+
+  .latestNews h1 {
+    text-align: left;
+    color: rgb(120, 145, 155);
+  }
+
+  .latestNews p {
+    line-height: 160%;
+    padding-bottom: 15px;
+  }
+}
+
+/*buttons-------------------------------------*/
+
+.button {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.buttontext {
+  font-family: montserratbold;
+  font-size: 14px;
+  position: relative;
+  bottom: 17px;
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: rgb(21, 71, 148);
+  animation-name: move;
+  animation-direction: alternate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    right: 0px;
+  }
+
+  50% {
+    right: 15px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
+/*advertisings-------------------------------------*/
+/*tablet/Mobile-------------------------------------*/
+@media only screen and (max-width: 1010px) {
+
+  .adsimage {
+    vertical-align: top;
+    width: 38%;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0 0 10px rgb(231, 229, 232);
+    margin: 10px 20px;
+  }
+
+  #advertising .divider {
+    display: none;
+  }
+
+}
+
+/*advertisings-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  /*advertisings-------------------------------------*/
+  .adsimage {
+    text-align: center;
+    width: 94%;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0 0 10px rgb(231, 229, 232);
+    margin: 10px 10px 0px 20px;
+  }
+
+  #advertising .divider {
+    display: block;
+  }
+}
+
+/* map container------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  #mapcontainer {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+
+  .map {
+    display: none;
+  }
+
+  .pics {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .attraction-map-button {
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+    transition: 1s ease;
+  }
+
+  .thumbcontainer {
+    position: relative;
+    width: 100%;
+  }
+
+  .thumbcontainer img {
+    width: 100%;
+  }
+    
+  .overlay {
+    position: absolute;
+    bottom: 15px;
+    background: rgba(120, 145, 155, 0.3);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 0.7em;
+    padding: 8px;
+    text-align: center;
+    text-shadow: 1px 1px 6px black;
+    font-family: "montserratregular";
+  }
+
+  .attraction-map-button:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+  }
+
+  .thumbcontainer:hover .overlay {
+    opacity: 1;
+  }
+}
+
+/* map container------------------------------*/
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1010px) {
+
+  #mapcontainer {
+    position: relative;
+    max-width: 100%;
+    display: inline-block;
+/*
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+*/
+  }
+
+  .map {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  .pics {
+    display: none;
+  }
+
+    #location1 {
+    position: absolute;
+    left: 129px;
+    top: 475px;
+    display: none;
+  }
+
+  #location1small {
+    position: absolute;
+    left: 168px;
+    top: 497px;
+    display: block;
+  }
+
+  #location2 {
+    position: absolute;
+    left: 118px;
+    top: 545px;
+    display: none;
+  }
+
+  #location2small {
+    position: absolute;
+    left: 158px;
+    top: 567px;
+    display: block;
+  }
+
+  #location3 {
+    position: absolute;
+    left: 132px;
+    top: 280px;
+    display: none;
+  }
+
+  #location3small {
+    position: absolute;
+    left: 165px;
+    top: 303px;
+    display: block;
+  }
+
+  #location4 {
+    position: absolute;
+    left: 138px;
+    top: 235px;
+    display: none;
+  }
+
+  #location4small {
+    position: absolute;
+    left: 166px;
+    top: 255px;
+    display: block;
+  }
+
+  #location5 {
+    position: absolute;
+    left: 146px;
+    top: 118px;
+    display: none;
+  }
+
+  #location5small {
+    position: absolute;
+    left: 167px;
+    top: 143px;
+    display: block;
+  }
+
+  #location6 {
+    position: absolute;
+    left: 100px;
+    top: 509px;
+    display: none;
+  }
+
+  #location6small {
+    position: absolute;
+    left: 160px;
+    top: 535px;
+    display: block;
+  }
+
+  #location7 {
+    position: absolute;
+    left: 277px;
+    top: 270px;
+    display: none;
+  }
+
+  #location7small {
+    position: absolute;
+    left: 314px;
+    top: 290px;
+    display: block;
+  }
+
+  #location8 {
+    position: absolute;
+    left: 95px;
+    top: 400px;
+    display: none;
+  }
+
+  #location8small {
+    position: absolute;
+    left: 154px;
+    top: 420px;
+    display: block;
+  }
+
+  #location9 {
+    position: absolute;
+    left: 254px;
+    top: 652px;
+    display: none;
+  }
+
+  #location9small {
+    position: absolute;
+    left: 266px;
+    top: 675px;
+    display: block;
+  }
+
+  #location10 {
+    position: absolute;
+    left: 132px;
+    top: 485px;
+    display: none;
+  }
+
+  #location10small {
+    position: absolute;
+    left: 156px;
+    top: 509px;
+    display: block;
+  }
+
+  .mapcaption {
+    display: block;
+    font-family: montserratbold;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .mappointer {
+    display: block;
+  }
+  
+}
+
+/* map container and locations------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  #mapcontainer {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+
+  .map {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    /*  width: 100%;*/
+  }
+
+  .mapimg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .pics {
+    display: block;
+    width: 20%;
+    padding: 20px;
+  }
+
+  .attraction-map-button {
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+    transition: 1s ease;
+
+  }
+
+  .thumbcontainer {
+    position: relative;
+    width: 100%;
+  }
+
+  .thumbcontainer img {
+    width: 100%;
+  }
+    
+  .overlay {
+    position: absolute;
+    bottom: 15px;
+    background: rgba(120, 145, 155, 0.3);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+    text-shadow: 1px 1px 6px black;
+    font-family: "montserratregular";
+  }
+
+  .attraction-map-button:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+  }
+
+  .thumbcontainer:hover .overlay {
+    opacity: 1;
+  }
+
+  #location1 {
+    position: absolute;
+    left: 36.6%;
+    top: 61.2%;
+    display: none;
+  }
+
+  #location1small {
+    position: absolute;
+    left: 39.7%;
+    top: 64.1%;
+    display: block;
+  }
+
+  #location2 {
+    position: absolute;
+    left: 35.7%;
+    top: 70%;
+    display: none;
+  }
+
+  #location2small {
+    position: absolute;
+    left: 39%;
+    top: 73.1%;
+    display: block;
+  }
+
+  #location3 {
+    position: absolute;
+    left: 36.9%;
+    top: 37.6%;
+    display: none;
+  }
+
+  #location3small {
+    position: absolute;
+    left: 39.5%;
+    top: 40.1%;
+    display: block;
+  }
+
+  #location4 {
+    position: absolute;
+    left: 37.2%;
+    top: 31.6%;
+    display: none;
+  }
+
+  #location4small {
+    position: absolute;
+    left: 39.6%;
+    top: 34.1%;
+    display: block;
+  }
+
+  #location5 {
+    position: absolute;
+    left: 38%;
+    top: 17.9%;
+    display: none;
+  }
+
+  #location5small {
+    position: absolute;
+    left: 39.7%;
+    top: 20.1%;
+    display: block;
+  }
+
+  #location6 {
+    position: absolute;
+    left: 33.8%;
+    top: 66.5%;
+    display: none;
+  }
+
+  #location6small {
+    position: absolute;
+    left: 39%;
+    top: 69.3%;
+    display: block;
+  }
+
+  #location7 {
+    position: absolute;
+    left: 48.8%;
+    top: 35.5%;
+    display: none;
+  }
+
+  #location7small {
+    position: absolute;
+    left: 52%;
+    top: 38.6%;
+    display: block;
+  }
+
+  #location8 {
+    position: absolute;
+    left: 33.7%;
+    top: 52.1%;
+    display: none;
+  }
+
+  #location8small {
+    position: absolute;
+    left: 38.5%;
+    top: 54.6%;
+    display: block;
+  }
+
+  #location9 {
+    position: absolute;
+    left: 47%;
+    top: 83.4%;
+    display: none;
+  }
+
+  #location9small {
+    position: absolute;
+    left: 48%;
+    top: 86.1%;
+    display: block;
+  }
+
+  #location10 {
+    position: absolute;
+    left: 36.7%;
+    top: 63.2%;
+    display: none;
+  }
+
+  #location10small {
+    position: absolute;
+    left: 38.6%;
+    top: 65.9%;
+    display: block;
+  }
+
+  .mapcaption {
+    display: block;
+    font-family: montserratbold;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .mappointer {
+    display: block;
+  }
+}
+
+#dest1 {}
+
+#dest2 {}
+
+/*footer-------------------------------------*/
+/*Mobile/Tablet-------------------------------------*/
+@media only screen and (max-width: 1010px) {
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-logo-divider {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .footer-logo-divider:after {
+    content: "";
+    height: 1px;
+    flex-direction: row;
+    flex: 1;
+    background: linear-gradient(90deg, white, rgb(51, 51, 51), white);
+    margin: auto;
+  }
+
+  .footer-logo-divider:before {
+    content: "";
+    height: 1px;
+    flex-direction: row;
+    flex: 1;
+    background: linear-gradient(90deg, white, rgb(51, 51, 51), white);
+    margin: auto;
+  }
+
+  .footer-logo {
+    width: 85%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  section {
+    vertical-align: top;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  section a {
+    text-decoration: none;
+    color: black;
+    font-family: 'montserratregular';
+    font-size: 0.6em;
+    line-height: 130%;
+  }
+
+  .footersocialm {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .footerlinks {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .footer-header {
+    display: inline-block;
+    font-family: "TrajanProRegular";
+    font-size: 0.8em;
+    vertical-align: top;
+    margin-top: 5px;
+  }
+
+  .footer-subheader {
+    display: inline-block;
+    font-family: 'montserratregular';
+    font-size: 0.5em;
+    margin: 0px;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+/*footer-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-logo-divider {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .footer-logo-divider:after {
+    content: "";
+    height: 1px;
+    flex-direction: row;
+    flex: 1;
+    background: linear-gradient(90deg, white, rgb(51, 51, 51), white);
+    margin: auto;
+  }
+
+  .footer-logo-divider:before {
+    content: "";
+    height: 1px;
+    flex-direction: row;
+    flex: 1;
+    background: linear-gradient(90deg, white, rgb(51, 51, 51), white);
+    margin: auto;
+  }
+
+  section {
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 50px;
+  }
+
+  section a {
+    text-decoration: none;
+    color: black;
+    font-family: 'montserratregular';
+    font-size: 0.7em;
+    line-height: 130%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footersocialm {
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+  }
+
+  .footerlinks {
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+  }
+
+  .footer-header {
+    font-family: "TrajanProRegular";
+    font-size: 1em;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .footer-subheader {
+    font-family: 'montserratregular';
+    font-size: 0.6em;
+    margin-bottom: 0px;
+    font-weight: 100;
+  }
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+
+<head>
+  <title>Patagonia Adventures</title>
+  <meta charset="utf-8">
+  <meta name="description" content="this is a website about the patagonia attractions to visit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="patagonia, travel, adventure, argentina">
+  <link rel="stylesheet" type="text/css" href="StyleSheet/newsstyle.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="lib/p5.min.js"></script>
+  <script src="./javascript/tipsnewsjavascript.js"></script>
+</head>
+
+<!-- This body section contains the structure for all the visble content -->
+
+<body>
+
+  <!-- This section contain all the header elements-->
+  <header>
+
+    <div class="header" id="myTopnav">
+      <div class="header-content">
+
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="Patagonia Adventures logo">
+        </a>
+        <a class="item" href="./report.html">Report</a>
+        <div class="menu">
+          <div class="dropbtn"><a href="./triptips.html">Trip Tips <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./triptips.html">Accommodations</a>
+            <a href="./triptips.html">Transportation</a>
+            <a href="./triptips.html">Seasons of the Year</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./news.html">News <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./news.html">News</a>
+            <a href="./news.html">Articles</a>
+            <a href="./news.html">Events Calendar</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./activities.html">Activities <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./activities.html">Adventure Tourism</a>
+            <a href="./activities.html">Sports</a>
+            <a href="./activities.html">Rides</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./attractions.html">Attractions <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./attractions.html">Tours</a>
+            <a href="./attractions.html">Most Visited Destinations</a>
+            <a href="./attractions.html">National Parks</a>
+          </div>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/menu.png"
+            alt="menu icon"></a>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="content">
+    <div class="grid-container-index">
+
+      <div id="content">
+
+        <div class="divider"></div>
+        <h1>Latest News</h1>
+        <div class="divider"></div>
+
+        <img class="latestNews" src="images/skiseason.jpg" alt="practicing ski picture">
+        <div class="latestNews">
+          <h1>Ski Season Open</h1>
+          <p>The ski and winter resorts in Chile and Argentina, which are tucked away on either side of the Andes
+            Mountain Range, are well-equipped to provide guests first-class amenities.<br>Argentina's Las Leñas,
+            Chapelco, Catedral, Cerro Bayo, Castor, and La Hoya keep the mystery that has made them famous and drawn a
+            large following to relive the skiing adventure each winter for decades.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+        <div class="articlescontainer">
+          <img class="soimage" src="images/whales2.jpg" alt="whales watching illustration">
+          <!-- Source picture and article: [31]-------------------->
+          <h4>OPEN SEASON</h4>
+          <h3>The 2023 Marine and Coastal Wildlife Watching Season was Launched</h3>
+          <p>With the presence of the Minister of Tourism and Sports, provincial and municipal authorities, this
+            Saturday the Marine and Coastal Fauna Watching season was officially launched in Las Grutas.</p>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <div class="articlescontainer">
+          <img class="soimage" src="images/perito_moreno_glacier3.jpg" alt="perito moreno glacier">
+          <!-- Source picture and article: [32]-------------------->
+          <h4>AWARD NOMINATION</h4>
+          <h3 class="sotext">The Perito Moreno Glacier nominated for the “World Travel Awards”</h3>
+          <p class="sotext">In the 30th edition of the award ceremony that is considered the “Oscars” of tourism, the
+            ice colossus was nominated in the “Leading Tourist Attraction in South America 2023” category.</p>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <div class="articlescontainer">
+          <img class="soimage" src="images/fishing2.jpg" alt="fishing illustration">
+          <!-- Source picture and article: [33]-------------------->
+          <h4>EXPOSITION</h4>
+          <h3>The Fly Fishing Expo is coming in San Martín de los Andes</h3>
+          <p>It is the most important exhibition dedicated to fly fishing in Argentina and in recent years it has become
+            a meeting that functions as the prelude to the fishing season in Patagonia.</p>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+        <h2 class="right-caption">CONTEST</h2>
+        <div class="latestNews">
+          <h1>Four Patagonian Destinations Selected for the “Best Tourism Villages” Contest</h1>
+          <p>The Ministry of Tourism and Sports of the Nation chose seven towns throughout the country that will compete
+            for the “best tourist town” distinction awarded by the World Tourism Organization. Patagonia participates
+            with four nominations of the seven that will be part of the contest.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <img class="latestNews" src="images/contest.jpg" alt="town picture">
+
+
+        <div class="divider"></div>
+        <h1>Articles</h1>
+        <div class="divider"></div>
+
+        <img class="latestNews" src="images/article.jpg" alt="food picture">
+        <div class="latestNews">
+          <h1>Patagonian Recipes</h1>
+          <p>We have gathered 148 meals that represent a sample of Patagonia's cuisine using traditional recipes from
+            indigenous populations and the significant impact brought by early European explorers.<br>To experiment in
+            the kitchen and obtain a better sense of the flavors of these places, recipes are provided for red and white
+            meat, seafood, shellfish, sweets, desserts, and smoked dishes.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+
+        <div class="articlescontainer">
+          <img class="soimage" src="images/valleCretacico.jpg" alt="Family Rides Illustration">
+          <!-- Source picture and article: [35]-------------------->
+          <h4>VALLE CRETACICO</h4>
+          <h3>The Natural Area that Impresses with its Beauty and Very Few Know</h3>
+          <p>Los Gigantes and El Anfiteatro are two of the main attractions of this reserve that protects flora, fauna
+            and fossil remains. Los Gigantes gives us a wonderful landscape of rock formations that emerge from the
+            turquoise water.</p>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <div class="articlescontainer">
+          <img class="soimage" src="images/hands.jpg" alt="Tickets link illustration">
+          <!-- Source picture: [36]-------------------->
+          <h4>CHARCAMATA EAVES</h4>
+          <h3 class="sotext">The VIP Expedition to Contemplate 5,500 Year Old Cave Paintings</h3>
+          <p class="sotext">They made their paintings with pigments of mineral origin, such as dehydrated iron oxide,
+            mixed with water, fat or blood. To paint their hands, for example, they placed the paint in their mouths and
+            blew a blowtorch with a hollow bone.</p>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <div class="articlescontainer">
+          <img class="soimage" src="images/puma.jpg" alt="Eating illustration">
+          <!-- Source picture: [37]-------------------->
+          <h4>PHOTOGRAPHY TOUR</h4>
+          <h3>Patagonia Puma Tracking</h3>
+          <p>Embark on an epic adventure with our professional wildlife trackers to track and observe the Patagonian
+            puma in its natural habitat. Along with cozy nights at EcoCamp and getting up close and personal with the
+            incredible flora and fauna.</p>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+      </div>
+
+
+      <div id="advertising">
+
+        <a href="https://www.escuelaxtreme.com"><img class="adsimage" src="images/147.jpg" alt="school of ski advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="https://www.amapatagoniarentacar.com.ar"><img class="adsimage" src="images/rentacar.jpg" alt="car rental advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="https://apartdellago.com.ar/"><img class="adsimage" src="images/hotel.jpg" alt="hotel advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="underConstruction.html"><img class="adsimage" src="images/adwus.jpg" alt="PA advertising"></a>
+
+      </div>
+
+      <footer>
+
+        <div class="footer-logo-divider">
+          <a href="index.html">
+            <img class="footer-logo" src="images/logoB.png" alt="Logo of the website">
+          </a>
+        </div>
+
+        <section class="footersocialm">
+          <div class="footer-header">&#8212;Links&#8212;</div>
+          <div><a href="underConstruction.html">About Us</a></div>
+          <div><a href="underConstruction.html">To Post an Ad</a></div>
+          <div><a href="underConstruction.html">Suggestions</a></div>
+          <div><a href="underConstruction.html">FAQ</a></div>
+        </section>
+
+        <section class="footerlinks">
+          <div class="footer-header">&#8212;Follow Us&#8212;</div>
+          <br>
+          <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram logo"></a>
+          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+          <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter logo"></a>
+          <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="Tiktok logo"></a>
+        </section>
+
+        <section class="footersocialm">
+          <div class="footer-header">&#821;Contacts&#8212;</div>
+          <p>fs209@student.london.ac.uk</p>
+          <h4 class="footer-subheader">Subscribe to our newsletter</h4>
+          <form aria-label="email input form">
+            <input type="text" placeholder="Email">
+            <input type="submit">
+          </form>
+        </section>
+
+      </footer>
+
+    </div>
+
+  </div>
+
+</body>

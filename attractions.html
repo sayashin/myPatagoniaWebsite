@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+
+<head>
+  <title>Patagonia Adventures</title>
+  <meta charset="utf-8">
+  <meta name="description" content="this is a website about the patagonia attractions to visit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="patagonia, travel, adventure, argentina">
+  <link rel="stylesheet" type="text/css" href="StyleSheet/atractionsstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="lib/p5.min.js"></script>
+  <script src="./javascript/atractionsjavascript.js"></script>
+</head>
+
+<!-- This body section contains the structure for all the visble content -->
+
+<body>
+
+  <!-- This section contain all the header elements-->
+  <header>
+
+    <div class="header" id="myTopnav">
+      <div class="header-content">
+
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="Patagonia Adventures logo">
+        </a>
+        <a class="item" href="./report.html">Report</a>
+        <div class="menu">
+          <div class="dropbtn"><a href="./triptips.html">Trip Tips <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./triptips.html">Accommodations</a>
+            <a href="./triptips.html">Transportation</a>
+            <a href="./triptips.html">Seasons of the Year</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./news.html">News <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./news.html">News</a>
+            <a href="./news.html">Articles</a>
+            <a href="./news.html">Events Calendar</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./activities.html">Activities <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./activities.html">Adventure Tourism</a>
+            <a href="./activities.html">Sports</a>
+            <a href="./activities.html">Rides</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropbtn"><a href="./attractions.html">Attractions <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="menu-content">
+            <a href="./attractions.html">Tours</a>
+            <a href="./attractions.html">Most Visited Destinations</a>
+            <a href="./attractions.html">National Parks</a>
+          </div>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/menu.png"
+            alt="menu icon"></a>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="content">
+
+    <div class="divider"></div>
+    <h1>Patagonia's Most Visited Destinations</h1>
+    <div class="divider"></div>
+
+    <div id="mapcontainer">
+
+      <div class="pics">
+        <div class="thumbcontainer">
+          <img src="./images/fitz-roy-patagonia-argentina-800x600.jpg" alt="mount fitz roy"
+            class="attraction-map-button" onclick="scrollfunction1()" onmouseover="mapFunction()"
+            onmouseout="mapFunction()"> <!-- Source picture: [6]-------------------->
+          <div class="overlay">Mount Fitz Roy</div>
+        </div>
+
+        <div class="thumbcontainer">
+          <img src="./images/paine-Chile2.jpg" alt="paine mountains" class="attraction-map-button"
+            onmouseover="mapFunction2()" onmouseout="mapFunction2()" onclick="scrollfunction2()">
+          <!-- Source picture: [2]-------------------->
+          <div class="overlay">Torres del Paine</div>
+        </div>
+
+        <div class="thumbcontainer">
+          <img src="./images/pn-alerces.jpg" alt="los alerces national park" class="attraction-map-button"
+            onclick="scrollfunction3()" onmouseover="mapFunction3()" onmouseout="mapFunction3()">
+          <!-- Source picture: [5]-------------------->
+          <div class="overlay">Los Alerces National Park</div>
+        </div>
+
+        <div class="thumbcontainer">
+          <img src="./images/san-carlos-de-bariloche2.jpg" alt="san carlos de bariloche"
+            class="attraction-map-button" onclick="scrollfunction4()" onmouseover="mapFunction4()"
+            onmouseout="mapFunction4()"> <!-- Source picture: [2]-------------------->
+          <div class="overlay">San Carlos de Bariloche</div>
+        </div>
+
+        <div class="thumbcontainer">
+          <img src="./images/caviahue.jpg" alt="Caviahue / Copahue" class="attraction-map-button"
+            onclick="scrollfunction5()" onmouseover="mapFunction5()" onmouseout="mapFunction5()">
+          <!-- Source picture: [12]-------------------->
+          <div class="overlay">
+            Caviahue / Copahue</div>
+        </div>
+      </div>
+
+
+      <div class="map">
+        <div class="mapimg"><img src="images/map+of+patagoina+chile+and+argentina.jpeg" alt="parkmap">
+          <!-- Source picture: [15]--------------------></div>
+
+        <div id="location1small">
+          <img src="./images/mapPointersmall.png" alt="Map pointer" onmouseover="mapFunction()" onmouseout="mapFunction()">
+        </div>
+        <div id="location1">
+          <div class="mappointer">
+            <img src="./images/mapPointer.png" alt="Map pointer" onclick="scrollfunction1()">
+          </div>
+          <div class="mapcaption">Mount Fitz Roy</div>
+        </div>
+
+        <div id="location2small">
+          <img src="./images/mapPointersmall.png" alt="Map pointer" onmouseover="mapFunction2()" onmouseout="mapFunction2()">
+        </div>
+        <div id="location2">
+          <div class="mappointer">
+            <img src="./images/mapPointer.png" alt="Map pointer" onclick="scrollfunction2()">
+          </div>
+          <div class="mapcaption">Torres del Paine</div>
+        </div>
+
+        <div id="location3small">
+          <img src="./images/mapPointersmall.png" alt="Map pointer"onmouseover="mapFunction3()" onmouseout="mapFunction3()">
+        </div>
+        <div id="location3">
+          <div class="mappointer">
+            <img src="./images/mapPointer.png" alt="Map pointer" onclick="scrollfunction3()">
+          </div>
+          <div class="mapcaption">Los Alerces<br>National Park</div>
+        </div>
+
+        <div id="location4small">
+          <img src="./images/mapPointersmall.png" alt="Map pointer" onmouseover="mapFunction4()" onmouseout="mapFunction4()">
+        </div>
+        <div id="location4">
+          <div class="mappointer">
+            <img src="./images/mapPointer.png" alt="Map pointer" onclick="scrollfunction4()">
+          </div>
+          <div class="mapcaption">San Carlos<br>de Bariloche</div>
+        </div>
+
+        <div id="location5small">
+          <img src="./images/mapPointersmall.png" alt="Map pointer" onmouseover="mapFunction5()" onmouseout="mapFunction5()">
+        </div>
+        <div id="location5">
+          <div class="mappointer">
+            <img src="./images/mapPointer.png" alt="Map pointer" onclick="scrollfunction5()">
+          </div>
+          <div class="mapcaption">Caviahue/<br>Copahue</div>
+        </div>
+
+        <div id="location6small">
+          <img src="./images/mapPointersmall.png" alt="Map pointer" onmouseover="mapFunction6()" onmouseout="mapFunction6()">
+        </div>
+        <div id="location6">
+          <div class="mappointer">
+            <img src="./images/mapPointer.png" alt="Map pointer" onclick="scrollfunction6()">
+          </div>
+          <div class="mapcaption">Perito Moreno Glacier</div>
+        </div>
+
+        <div id="location7small">
+          <img src="./images/mapPointersmall.png" alt="Map pointer" onmouseover="mapFunction7()" onmouseout="mapFunction7()">
+        </div>
+        <div id="location7">
+          <div class="mappointer">
+            <img src="./images/mapPointer.png" alt="Map pointer" onclick="scrollfunction7()">
+          </div>
+          <div class="mapcaption">Puerto Madryn</div>
+        </div>
+
+        <div id="location8small">
+          <img src="./images/mapPointersmall.png" alt="Map pointer" onmouseover="mapFunction8()" onmouseout="mapFunction8()">
+        </div>
+        <div id="location8">
+          <div class="mappointer">
+            <img src="./images/mapPointer.png" alt="Map pointer" onclick="scrollfunction8()">
+          </div>
+          <div class="mapcaption">Puerto Rio Tranquilo</div>
+        </div>
+
+        <div id="location9small">
+          <img src="./images/mapPointersmall.png" alt="Map pointer" onmouseover="mapFunction9()" onmouseout="mapFunction9()">
+        </div>
+        <div id="location9">
+          <div class="mappointer">
+            <img src="./images/mapPointer.png" alt="Map pointer" onclick="scrollfunction9()">
+          </div>
+          <div class="mapcaption">Ushuaia</div>
+        </div>
+
+        <div id="location10small">
+          <img src="./images/mapPointersmall.png" alt="Map pointer" onmouseover="mapFunction10()" onmouseout="mapFunction10()">
+        </div>
+        <div id="location10">
+          <div class="mappointer">
+            <img src="./images/mapPointer.png" alt="Map pointer" onclick="scrollfunction10()">
+          </div>
+          <div class="mapcaption">Cerro Torre</div>
+        </div>
+
+      </div>
+
+      <div class="pics">
+
+        <div class="thumbcontainer">
+          <img src="./images/perito_moreno_glacier2.jpg" alt="perito moreno glacier" 
+            class="attraction-map-button" onclick="scrollfunction6()" onmouseover="mapFunction6()"
+            onmouseout="mapFunction6()"> <!-- Source picture: [11]-------------------->
+          <div class="overlay">Perito Moreno Glacier</div>
+        </div>
+
+        <div class="thumbcontainer">
+          <img src="./images/puerto-madryn.jpg" alt="puerto madryn" class="attraction-map-button"
+            onclick="scrollfunction7()" onmouseover="mapFunction7()" onmouseout="mapFunction7()">
+          <!-- Source picture: [13]-------------------->
+          <div class="overlay">Puerto Madryn</div>
+        </div>
+
+        <div class="thumbcontainer">
+          <img src="./images/puerto-rio-tranquilo.jpg" alt="puerto rio tranquilo"
+            class="attraction-map-button" onclick="scrollfunction8()" onmouseover="mapFunction8()"
+            onmouseout="mapFunction8()"> <!-- Source picture: [2]-------------------->
+          <div class="overlay">Puerto Rio Tranquilo</div>
+        </div>
+
+        <div class="thumbcontainer">
+          <img src="./images/usuahia.jpg" alt="ushuaia" class="attraction-map-button"
+            onclick="scrollfunction9()" onmouseover="mapFunction9()" onmouseout="mapFunction9()">
+          <!-- Source picture: [14]-------------------->
+          <div class="overlay">Ushuaia</div>
+        </div>
+
+        <div class="thumbcontainer">
+          <img src="./images/cerro-torre2.jpg" alt="cerro torre" class="attraction-map-button"
+            onclick="scrollfunction10()" onmouseover="mapFunction10()" onmouseout="mapFunction10()">
+          <!-- Source picture: [2]-------------------->
+          <div class="overlay">Cerro Torre</div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="grid-container-index">
+      <div id="content">
+
+        <div class="divider"></div>
+
+        <h1 id="dest1" class="left-caption">MOUNT FITZ ROY</h1>
+        <img class="latestNews" src="images/fitz-roy-patagonia-argentina-800x600.jpg" alt="mount fitz roy">
+        <div class="latestNews">
+          <h1>Fantastic Hikings</h1>
+          <p>Throughout the entire Mount Fitz Roy trek, you'll be treated to breathtaking landscapes. You'll encounter
+            expansive river valley vistas, majestic mountain panoramas, serene forests, and glistening lakes. The
+            pinnacle of this hike is the awe-inspiring sight of the glacier-clad Cerro Fitz Roy, one of Patagonia's most
+            iconic peaks, towering over the turquoise Laguna de los Tres below.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+        <h2 id="dest2" class="right-caption">TORRES DEL PAINE</h2>
+        <div class="latestNews">
+          <h1>A Backpacking Adventure</h1>
+          <p>This expansive national park is renowned for its breathtaking glaciers, picturesque lakes, verdant forests,
+            and the iconic trio of granite peaks known as the Paine Massif. Whether you opt for a single-day hike or
+            embark on an extended adventure along the W and O Treks, you'll have the opportunity to fully immerse
+            yourself in the splendor of this remote natural marvel. The prime time to visit is from September to May,
+            with December to February being particularly appealing due to the abundance of daylight, with up to 17 hours
+            of daylight during these months.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <img class="latestNews" src="images/paine-Chile2.jpg" alt="man practicing ski">
+
+        <h1 id="dest3" class="left-caption">LOS ALERCES NATIONAL PARK</h1>
+        <img class="latestNews" src="images/pn-alerces.jpg" alt="los alerces national park">
+        <div class="latestNews">
+          <h1>A Walk Among Ancient Trees</h1>
+          <p>An exceptionally stunning national park, recognized as a UNESCO World Natural Heritage Site in 2017, boasts
+            turquoise lakes, winding rivers, majestic glaciers, cascading waterfalls, and the ancient Alerzal Milenario.
+            This park is a part of the Valdivian forest and is home to larch trees that have thrived for over 2500
+            years.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+        <h2 id="dest4" class="right-caption">SAN CARLOS DE BARILOCHE</h2>
+        <div class="latestNews">
+          <h1>Patagonia's Most Famous Town</h1>
+          <p>Bariloche is a city enveloped by ancient woodlands, snow-clad mountains, and pristine, transparent lakes—a
+            quintessential embodiment of Patagonia. This urban center is a hub of excellence nestled amidst some of the
+            most breathtaking natural landscapes in the country.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <img class="latestNews" src="images/san-carlos-de-bariloche2.jpg" alt="man practicing ski">
+
+        <h1 id="dest5" class="left-caption">CAVIAHUE / COPAHUE</h1>
+        <img class="latestNews" src="images/caviahue.jpg" alt="caviahue town">
+        <div class="latestNews">
+          <h1>Take a Healing Thermal Bath</h1>
+          <p>It is located at the foot of Copahue volcano, and on the banks of a large water mirror formed by Caviahue
+            lake. This town, along with Locopué and Las Lajas, constitutes the tourist area called Thermal Patagonia.
+            Copahue thermal springs are worldly renowned for the quality and diversity of their waters.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+        <h2 id="dest6" class="right-caption">PERITO MORENO GLACIER</h2>
+        <div class="latestNews">
+          <h1>The Eighth Wonder of the World</h1>
+          <p>The Los Glaciares National Park is a region of extraordinary natural splendor, characterized by imposing,
+            lofty mountains and numerous glacial lakes. Among them is Lake Argentino, stretching over 160 km in length.
+            At its remote terminus, three glaciers converge to release their debris into the hazy, grey glacial waters,
+            sending colossal icebergs resembling igloos plunging into the lake with resounding splashes.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <img class="latestNews" src="images/perito_moreno_glacier2.jpg" alt="man practicing ski">
+
+        <h1 id="dest7" class="left-caption">PUERTO MADRYN</h1>
+        <img class="latestNews" src="images/puerto-madryn.jpg" alt="puerto madryn">
+        <div class="latestNews">
+          <h1>Walk With Penguins, Touch The Whales</h1>
+          <p>An entrance to encounters with whales, penguins, the Valdes Peninsula, and Welsh customs. Upon the initial
+            glimpse, Puerto Madryn captivates travelers. It stands as one of Patagonia's liveliest cities, featuring a
+            picturesque coastal boulevard that offers panoramic views of the expansive natural amphitheater of Nuevo
+            Gulf.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+        <h2 id="dest8" class="right-caption">PUERTO RIO TRANQUILO</h2>
+        <div class="latestNews">
+          <h1>Watch Unusual Salvador Dali-esque Caves</h1>
+          <p>The primary allure of Puerto Río Tranquilo lies in its enchanting marble caves. These formations seem as
+            though they've melded into the water, propped up by columns frozen in a moment like lava streams vanishing
+            into the submerged depths of the caves. When the sun shines, its rays bounce off the cave walls and the
+            relatively shallow pools within the caves, casting surreal, undulating patterns across the walls, while the
+            water itself mirrors a kaleidoscope of turquoise hues.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <img class="latestNews" src="images/puerto-rio-tranquilo.jpg" alt="man practicing ski">
+
+        <h1 id="dest9" class="left-caption">USHUAIA</h1>
+        <img class="latestNews" src="images/usuahia.jpg" alt="ushuaia">
+        <div class="latestNews">
+          <h1>Be at The End Of The World</h1>
+          <p>Situated at the southernmost tip of Argentina, Ushuaia marks the conclusion of southern Patagonia. It is
+            enveloped by both the sea and the mountain range, offering breathtaking vistas wherever you look, with
+            nature's vibrant colors and vastness never ceasing to amaze. The city provides access to rugged and untamed
+            terrain, with plenty of opportunities for exploration. Moreover, there are numerous day hikes to experience
+            within the Tierra del Fuego National Park.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+
+        <h2 id="dest10" class="right-caption">CERRO TORRE</h2>
+        <div class="latestNews">
+          <h1>The Most Beautiful Mountain on Earth</h1>
+          <p>By residing in the neighboring town of El Chaltén, you can access various day hikes offering impressive
+            views of Cerro Torre. However, for a more demanding adventure and a unique perspective on the mountain,
+            there's a challenging route that leads you onto the Ice Cap, allowing you to approach the mountain closely
+            and witness it from a distinct angle as part of an arduous expedition.</p>
+          <br>
+          <div class="button">
+            <a href="underConstruction.html" class="buttontext">Read More</a>
+            <img src="images/button.png" alt="button">
+          </div>
+        </div>
+        <img class="latestNews" src="images/cerro-torre2.jpg" alt="man practicing ski">
+
+      </div>
+
+
+      <div id="advertising">
+
+        <a href="https://www.amapatagoniarentacar.com.ar"><img class="adsimage" src="images/rentacar.jpg" alt="car rental advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="https://apartdellago.com.ar/"><img class="adsimage" src="images/hotel.jpg" alt="hotel advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="https://www.escuelaxtreme.com"><img class="adsimage" src="images/147.jpg" alt="ski school advertising"></a>
+
+        <div class="divider"></div>
+
+        <a href="underConstruction.html"><img class="adsimage" src="images/adwus.jpg" alt="patagonia adventure advertising"></a>
+
+      </div>
+    </div>
+
+    <footer>
+
+      <div class="footer-logo-divider">
+        <a href="index.html">
+          <img class="footer-logo" src="images/logoB.png" alt="Logo of the website">
+        </a>
+      </div>
+
+      <section class="footersocialm">
+        <div class="footer-header">&#8212;Links&#8212;</div>
+        <div><a href="underConstruction.html">About Us</a></div>
+        <div><a href="underConstruction.html">To Post an Ad</a></div>
+        <div><a href="underConstruction.html">Suggestions</a></div>
+        <div><a href="underConstruction.html">FAQ</a></div>
+      </section>
+
+      <section class="footerlinks">
+        <div class="footer-header">&#8212;Follow Us&#8212;</div>
+        <br>
+        <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram logo"></a>
+        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+        <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter logo"></a>
+        <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="Tiktok logo"></a>
+      </section>
+
+      <section class="footersocialm">
+        <div class="footer-header">&#8212;Contacts&#8212;</div>
+        <p>fs209@student.london.ac.uk</p>
+        <h4 class="footer-subheader">Subscribe to our newsletter</h4>
+        <form aria-label="email input form">
+          <input type="text" placeholder="Email">
+          <input type="submit">
+        </form>
+      </section>
+
+    </footer>
+
+  </div>
+
+</body>

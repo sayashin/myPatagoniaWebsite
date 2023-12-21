@@ -1,0 +1,1230 @@
+/*fonts-------------------------------------*/
+
+@font-face {
+  font-family: montserratregular;
+  src: url(/fonts/montserrat.regular.ttf);
+}
+
+@font-face {
+  font-family: montserratbold;
+  src: url(/fonts/montserrat.bold.ttf);
+}
+
+@font-face {
+  font-family: TrajanProRegular;
+  src: url(/fonts/TrajanProRegular.ttf);
+}
+
+@font-face {
+  font-family: TrajanProBold;
+  src: url(/fonts/TrajanProBold.ttf);
+}
+
+/* body and texts-------------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  body {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "TrajanProRegular";
+    font-size: 18px;
+    margin: 0px;
+    font-weight: 100;
+    text-shadow: 0px 0px 6px white;
+  }
+
+  h3 {
+    font-family: TrajanProRegular;
+    font-size: 20px;
+  }
+
+  h4 {
+    font-family: montserratbold;
+    font-size: 14px;
+  }
+
+  p {
+    font-family: montserratregular;
+    font-size: 14px;
+  }
+}
+
+/* body and texts-------------------------------------*/
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1010px) {
+
+  body {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "TrajanProRegular";
+    font-size: 33px;
+    margin: 0px;
+    font-weight: 100;
+    text-shadow: 0px 0px 6px white;
+  }
+
+  h3 {
+    font-family: TrajanProRegular;
+    font-size: 20px;
+  }
+
+  h4 {
+    font-family: montserratbold;
+    font-size: 14px;
+  }
+
+  p {
+    font-family: montserratregular;
+    font-size: 14px;
+  }
+}
+
+/* body and texts-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  body {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "TrajanProRegular";
+    font-size: 43px;
+    margin: 0px;
+    font-weight: 100;
+    text-shadow: 0px 0px 6px white;
+  }
+
+  h3 {
+    font-family: TrajanProRegular;
+    font-size: 26px;
+  }
+
+  h4 {
+    font-family: montserratbold;
+    font-size: 16px;
+  }
+
+  p {
+    font-family: montserratregular;
+    font-size: 16px;
+  }
+}
+
+/*header/navigation-------------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  /* Style the header with a grey background and some padding */
+  .header {
+    overflow: hidden;
+    background-color: rgba(120, 145, 155, 0.3);
+    margin-bottom: 47%;
+  }
+
+  .header:hover {
+    background-color: rgba(120, 145, 155, 0.7);
+  }
+
+  .logo img {
+    float: left;
+    padding: 20px 0px 0px;
+    width: 35%;
+  }
+
+  /* Style the links inside the navigation bar */
+  .item {
+    float: right;
+    overflow: hidden;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    text-align: center;
+    padding: 22px 6px 5px 6px;
+    background-color: inherit;
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: "TrajanProBold";
+  }
+
+  /* menu container - needed to position the menu content */
+  .menu {
+    float: right;
+    overflow: hidden;
+  }
+
+  /* Style the menu button to fit inside the topnav */
+  .menu .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    padding: 22px 6px 5px 6px;
+    background-color: inherit;
+    font-family: "TrajanProBold";
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .menu .dropbtn a {
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* Style the menu content (hidden by default) */
+  .menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Style the links inside the menu */
+  .menu-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "TrajanProBold";
+    font-size: 13px;
+  }
+
+  .slidecaptions {
+    font-family: 'montserratregular';
+    font-weight: 100;
+    font-size: 0.4em;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    text-shadow: 0px 0px 6px black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    max-width: 80%;
+  }
+}
+
+/*header/navigation-------------------------------------*/
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1010px) {
+
+  /* Style the header with a grey background and some padding */
+  .header {
+    overflow: hidden;
+    background-color: rgba(120, 145, 155, 0.3);
+    margin-bottom: 50%;
+  }
+
+  .header:hover {
+    background-color: rgba(120, 145, 155, 0.7);
+  }
+
+  .header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .logo img {
+    float: left;
+    padding: 18px 0px 0px;
+    width: 35%;
+  }
+
+  /* Style the links inside the navigation bar */
+  .item {
+    float: right;
+    overflow: hidden;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    text-align: center;
+    padding: 22px 6px 5px 6px;
+    background-color: inherit;
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: "TrajanProBold";
+  }
+
+  .header .icon {
+    display: none;
+  }
+
+  /* menu container - needed to position the menu content */
+  .menu {
+    float: right;
+    overflow: hidden;
+  }
+
+  /* Style the menu button to fit inside the topnav */
+  .menu .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    padding: 22px 6px 5px 6px;
+    background-color: inherit;
+    font-family: "TrajanProBold";
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .menu .dropbtn a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Style the menu content (hidden by default) */
+  .menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Style the links inside the menu */
+  .menu-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "TrajanProBold";
+    font-size: 13px;
+  }
+
+  .slidecaptions {
+    font-family: 'montserratregular';
+    font-weight: 100;
+    font-size: 0.6em;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    text-shadow: 0px 0px 6px black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    max-width: 80%;
+  }
+}
+
+/*header/navigation-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  /* Style the header with a grey background and some padding */
+  .header {
+    overflow: hidden;
+    background-color: rgba(120, 145, 155, 0.3);
+    margin-bottom: 54%;
+  }
+
+  .header:hover {
+    background-color: rgba(120, 145, 155, 0.7);
+  }
+
+  .header-content {
+    max-width: 1206px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .logo {
+    float: left;
+    padding: 18px 0px 2px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .item {
+    float: right;
+    overflow: hidden;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+    text-align: center;
+    padding: 26px 10px 14px 10px;
+    background-color: inherit;
+    margin: 0;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 35px;
+    font-family: "TrajanProBold";
+  }
+
+  .header .icon {
+    display: none;
+  }
+
+  /* menu container - needed to position the menu content */
+  .menu {
+    float: right;
+    overflow: hidden;
+  }
+
+  /* Style the menu button to fit inside the topnav */
+  .menu .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+    padding: 26px 10px 14px 10px;
+    background-color: inherit;
+    font-family: "TrajanProBold";
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .menu .dropbtn a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Style the menu content (hidden by default) */
+  .menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Style the links inside the menu */
+  .menu-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "TrajanProBold";
+    font-size: 14px;
+  }
+
+  .slidecaptions {
+    font-family: 'montserratregular';
+    font-weight: 100;
+    font-size: 0.6em;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    text-shadow: 0px 0px 6px black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    max-width: 80%;
+    /* Adjust this value as needed */
+  }
+}
+
+/* Add a background on topnav links and the menu button on hover */
+.header .item:hover,
+.menu:hover .dropbtn {
+  background-color: rgba(255, 221, 60, 0.4);
+  color: white;
+}
+
+/* Add a background to menu links on hover */
+.menu-content a:hover {
+  background-color: rgba(255, 221, 60, 0.25);
+  color: black;
+}
+
+/* Show the menu when the user moves the mouse over the menu button */
+.menu:hover .menu-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one. -------------------------------------*/
+@media screen and (max-width: 720px) {
+
+  .header a:not(:first-child),
+  .menu .dropbtn {
+    display: none;
+  }
+
+  .logo img {
+    float: left;
+    padding: 5px 80px 5px 10px;
+    width: 80%;
+  }
+
+  .header a.icon {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+}
+
+/* The responsive class is added to the topnav with JavaScript when the user clicks on the icon. Display the links vertically instead of horizontally----------------*/
+@media screen and (max-width: 720px) {
+  .header.responsive {
+    position: relative;
+    margin-bottom: 15%;
+  }
+
+  .header.responsive a.icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 5px 16px;
+  }
+
+  .header.responsive .menu {
+    float: none;
+  }
+
+  .header.responsive .menu-content {
+    position: relative;
+  }
+
+  .header.responsive .menu-content a {
+    padding: 5px 16px;
+  }
+
+  .header.responsive .menu .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px 16px;
+  }
+
+  .header.responsive .logo img {
+    margin-right: 400px;
+  }
+}
+
+/*main top slideshow-------------------------------------*/
+/* Make the background image responsive */
+.bg-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  z-index: -1;
+  animation: slideshow 5s infinite;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  height: auto;
+  min-height: 100%;
+}
+
+/* Define the keyframes for the slideshow animation */
+@keyframes slideshow {
+
+  0%,
+  100% {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+}
+
+/*main body-------------------------------------*/
+
+/*divider to add visual separation-------------*/
+.divider {
+  background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+  height: 1.5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/*grid of the index-------------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  .content {
+    text-align: center;
+  }
+
+  #content {
+    grid-area: main;
+  }
+
+  #advertising {
+    grid-area: ads;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-areas:
+      'header header header header header header'
+      'nav nav nav nav nav nav'
+      'main main main main main main'
+      'ads ads ads ads ads ads'
+      'footer footer footer footer footer footer';
+    background-color: white;
+  }
+
+  #advertising {
+    background: white;
+  }
+}
+
+/*grid of the index-------------------------------------*/
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1010px) {
+
+  .content {
+    text-align: center;
+  }
+
+  #content {
+    grid-area: main;
+  }
+
+  #advertising {
+    grid-area: ads;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-areas:
+      'header header header header header header'
+      'nav nav nav nav nav nav'
+      'main main main main main main'
+      'ads ads ads ads ads ads'
+      'footer footer footer footer footer footer';
+    background-color: white;
+  }
+
+  #advertising {
+    background: white;
+  }
+}
+
+/*grid of the index-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  .content {
+    max-width: 1206px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  #content {
+    grid-area: main;
+  }
+
+  #advertising {
+    grid-area: ads;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto 250px;
+    grid-template-areas:
+      'header header header header header header'
+      'nav nav nav nav nav nav'
+      'main main main main main ads'
+      'footer footer footer footer footer footer';
+    background-color: white;
+  }
+
+  #advertising {
+    background: white;
+    border-left-color: rgb(120, 145, 155);
+    border-left: 1px solid gray;
+  }
+}
+
+/*first articles links-------------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  .articlescontainer {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    /*  vertical-align: top;*/
+  }
+
+  .soimage {
+    width: 100%;
+  }
+
+  .articlescontainer h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(120, 145, 155);
+  }
+
+  .articlescontainer p {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    line-height: 160%;
+  }
+
+  .articlescontainer h4 {
+    text-align: right;
+    margin: 0px 10px;
+  }
+}
+
+/*first articles links-------------------------------------*/
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1010px) {
+
+  .articlescontainer {
+    position: relative;
+    display: inline-block;
+    height: 450px;
+    width: 31%;
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: top;
+  }
+
+  .soimage {
+    width: 100%;
+  }
+
+  .articlescontainer h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(120, 145, 155);
+  }
+
+  .articlescontainer p {
+    margin-top: 5px;
+    margin-right: 10px;
+    line-height: 160%;
+    padding-bottom: 40px;
+  }
+
+  .articlescontainer h4 {
+    text-align: right;
+    margin: 0px 10px;
+  }
+}
+
+/*first articles links-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  .articlescontainer {
+    position: relative;
+    display: inline-block;
+    height: 500px;
+    width: 32%;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    vertical-align: top;
+  }
+
+  .soimage {
+    width: 100%;
+  }
+
+  .articlescontainer h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(120, 145, 155);
+  }
+
+  .articlescontainer p {
+    margin-top: 5px;
+    margin-right: 10px;
+    line-height: 160%;
+    margin-bottom: 60px;
+  }
+
+  .articlescontainer h4 {
+    text-align: right;
+    margin: 0px 10px;
+  }
+}
+
+/*buttons-------------------------------------*/
+
+.button {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.buttontext {
+  font-family: montserratbold;
+  font-size: 14px;
+  position: relative;
+  bottom: 17px;
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: rgb(21, 71, 148);
+  animation-name: move;
+  animation-direction: alternate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    right: 0px;
+  }
+
+  50% {
+    right: 15px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
+/*main news/articles-------------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  .left-caption,
+  .right-caption {
+    font-family: montserratregular;
+    font-size: 1em;
+    margin: 0px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  .right-caption:before {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    padding-right: 60%;
+    margin-top: 40px;
+  }
+
+  .left-caption:after {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    margin-left: 10px;
+    padding-left: 70%;
+  }
+
+  /*news/articles container-------------------------------------*/
+
+  .latestNews {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    padding: 0px 0px 5px 0px;
+    width: 90%;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: top;
+  }
+
+  .latestnews img {
+    width: 100%;
+    height: auto;
+  }
+
+  .latestNews h1 {
+    text-align: left;
+    color: rgb(120, 145, 155);
+    font-size: 1.8em;
+  }
+
+  .latestNews p {
+    line-height: 160%;
+    padding-bottom: 15px;
+  }
+}
+
+/*main news/articles-------------------------------------*/
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1010px) {
+
+  .left-caption,
+  .right-caption {
+    font-family: montserratregular;
+    font-size: 1.1em;
+    margin: 0px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  .right-caption:before {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    padding-right: 72%;
+    margin-top: 40px;
+  }
+
+  .left-caption:after {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    margin-left: 10px;
+    padding-left: 80%;
+  }
+
+  /*news/articles container-------------------------------------*/
+
+  .latestNews {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    padding: 0px 0px 5px 0px;
+    width: 44%;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: top;
+  }
+
+  .latestnews img {
+    width: 100%;
+    height: auto;
+  }
+
+  .latestNews h1 {
+    text-align: left;
+    color: rgb(120, 145, 155);
+  }
+
+  .latestNews p {
+    line-height: 160%;
+    padding-bottom: 15px;
+  }
+}
+
+/*main news/articles-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  /*captions-------------------------------------*/
+  .left-caption,
+  .right-caption {
+    font-family: montserratregular;
+    font-size: 1.3em;
+    margin: 0px;
+    font-weight: 100;
+    padding-bottom: 10px;
+  }
+
+  .right-caption:before {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    padding-right: 72%;
+    margin-top: 40px;
+  }
+
+  .left-caption:after {
+    content: "";
+    display: inline-block;
+    background: linear-gradient(90deg, white, rgb(120, 145, 155), white);
+    height: 1.5px;
+    margin-left: 10px;
+    padding-left: 82%;
+  }
+
+  /*news/articles container-------------------------------------*/
+
+  .latestNews {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    padding: 0px 0px 5px 0px;
+    width: 48%;
+    text-align: left;
+    /*  margin-left: 5px;*/
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .latestnews img {
+    width: 100%;
+    height: auto;
+  }
+
+  .latestNews h1 {
+    text-align: left;
+    color: rgb(120, 145, 155);
+  }
+
+  .latestNews p {
+    line-height: 160%;
+    padding-bottom: 15px;
+  }
+}
+
+/*advertisings-------------------------------------*/
+/*tablet/Mobile-------------------------------------*/
+@media only screen and (max-width: 1010px) {
+
+  .adsimage {
+    vertical-align: top;
+    width: 38%;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0 0 10px rgb(231, 229, 232);
+    margin: 10px 20px;
+  }
+
+  #advertising .divider {
+    display: none;
+  }
+}
+
+/*advertisings-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  .adsimage {
+    text-align: center;
+    width: 94%;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0 0 10px rgb(231, 229, 232);
+    margin: 10px 10px 0px 10px;
+  }
+
+  #advertising .divider {
+    display: block;
+  }
+}
+
+/*footer-------------------------------------*/
+/*Mobile/Tablet-------------------------------------*/
+@media only screen and (max-width: 1010px) {
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-logo-divider {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .footer-logo-divider:after {
+    content: "";
+    height: 1px;
+    flex-direction: row;
+    flex: 1;
+    background: linear-gradient(90deg, white, rgb(51, 51, 51), white);
+    margin: auto;
+  }
+
+  .footer-logo-divider:before {
+    content: "";
+    height: 1px;
+    flex-direction: row;
+    flex: 1;
+    background: linear-gradient(90deg, white, rgb(51, 51, 51), white);
+    margin: auto;
+  }
+
+  .footer-logo {
+    width: 85%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  section {
+    vertical-align: top;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  section a {
+    text-decoration: none;
+    color: black;
+    font-family: 'montserratregular';
+    font-size: 0.6em;
+    line-height: 130%;
+  }
+
+  .footersocialm {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .footerlinks {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .footer-header {
+    display: inline-block;
+    font-family: "TrajanProRegular";
+    font-size: 0.8em;
+    vertical-align: top;
+    margin-top: 5px;
+  }
+
+  .footer-subheader {
+    display: inline-block;
+    font-family: 'montserratregular';
+    font-size: 0.5em;
+    margin: 0px;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+/*footer-------------------------------------*/
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-logo-divider {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .footer-logo-divider:after {
+    content: "";
+    height: 1px;
+    flex-direction: row;
+    flex: 1;
+    background: linear-gradient(90deg, white, rgb(51, 51, 51), white);
+    margin: auto;
+  }
+
+  .footer-logo-divider:before {
+    content: "";
+    height: 1px;
+    flex-direction: row;
+    flex: 1;
+    background: linear-gradient(90deg, white, rgb(51, 51, 51), white);
+    margin: auto;
+  }
+
+  section {
+    display: inline-block;
+    padding-bottom: 50px;
+  }
+
+  section a {
+    text-decoration: none;
+    color: black;
+    font-family: 'montserratregular';
+    font-size: 0.7em;
+    line-height: 130%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footersocialm {
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+  }
+
+  .footerlinks {
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+  }
+
+  .footer-header {
+    font-family: "TrajanProRegular";
+    font-size: 1em;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .footer-subheader {
+    font-family: 'montserratregular';
+    font-size: 0.6em;
+    margin-bottom: 0px;
+    font-weight: 100;
+  }
+}
